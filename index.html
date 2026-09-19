@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Barbería</title>
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header>
+        <h1>Barbería Elegance</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#reservas">Reservar Cita</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Sección Inicio / Bienvenida -->
+    <section id="inicio">
+        <h2>Estilo y Estilo Clásico para el Hombre Moderno</h2>
+        <p>Tu estilo es nuestra prioridad. Agenda tu cita en línea y evita esperas.</p>
+    </section>
+
+    <hr>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li><strong>Corte de Cabello Tradicional:</strong> $15.000</li>
+            <li><strong>Arreglo de Barba y Perfilado:</strong> $10.000</li>
+            <li><strong>Combo Corte + Barba:</strong> $22.000</li>
+            <li><strong>Tratamiento Capilar:</strong> $8.000</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Formulario de Reservas -->
+    <section id="reservas">
+        <h2>Reserva tu Cita</h2>
+        <form>
+            <div>
+                <label for="nombre">Nombre Completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+            </div>
+            <br>
+            <div>
+                <label for="telefono">Teléfono / WhatsApp:</label><br>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 3001234567">
+            </div>
+            <br>
+            <div>
+                <label for="servicio">Selecciona el Servicio:</label><br>
+                <select id="servicio" name="servicio" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="corte">Corte de Cabello</option>
+                    <option value="barba">Arreglo de Barba</option>
+                    <option value="combo">Combo Corte + Barba</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="fecha">Fecha:</label><br>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <br>
+            <div>
+                <label for="hora">Hora:</label><br>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+            <br>
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Barbería Elegance. Todos los derechos reservados.</p>
+        <p>Dirección: Calle Principal #123 | Teléfono: +57 300 000 0000</p>
+    </footer>
+
+</body>
+</html>
